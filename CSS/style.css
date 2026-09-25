@@ -3,4 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+.contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-contactanos h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
 
