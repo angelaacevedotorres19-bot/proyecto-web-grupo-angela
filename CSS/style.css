@@ -8,21 +8,60 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     height: auto;
-    padding: 15px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     border-bottom: 1px solid rgba(188, 187, 187, 0.7);
+    gap: 10px;
+}
+
+.tser{
+    font-size: 30px;
 }
 
 .tarservicios{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    gap: 10px;
+    gap: 18px;
     justify-content: center;
     align-items: center;
+    padding: 15px;
+
+}
+
+.servicio{
+    width: auto;
+    
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 10px;
+    box-shadow: 0 3px 3px rgba(188, 187, 187, 0.7);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.barrita{
+    background-color: blue;
+    border-radius: 10px;
+    width: 5%;
+    height: 5px;
+}
+
+.stser{
+    margin-bottom: 10px;
+}
+
+@media(max-width: 768px){
+
+    .tarservicios{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
 
