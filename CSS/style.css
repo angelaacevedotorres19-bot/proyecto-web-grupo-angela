@@ -213,45 +213,36 @@ main{
    Añadidura de andrea
    ===================================================== */
 
-/* Contenedor principal de la sección */
 .contactanos {
     width: 100%;
     min-height: 400px;
     padding: 45px 20px;
     background-color: #f8fafc;
 
-    /* Colocamos los elementos uno debajo del otro */
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    /* Línea que separa la sección */
     border-bottom: 1px solid rgba(188, 187, 187, 0.7);
 
-    /* Espacio entre el título y el formulario */
+    
     gap: 25px;
-
-    /* Evita que los estilos anteriores afecten esta sección */
     box-sizing: border-box;
 }
 
-
-/* Título "Contáctanos" */
 .titulo-contactanos {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     color: #0f172a;
     text-align: center;
 
-    /* Quitamos márgenes que puedan venir del navegador */
+  
     margin: 0;
 
-    /* Hace que el título quede encima del formulario */
     position: relative;
 }
 
-
-/* Línea azul debajo del título */
 .titulo-contactanos::after {
     content: "";
 
@@ -266,9 +257,6 @@ main{
 
     margin: 10px auto 0;
 }
-
-
-/* Tarjeta blanca que contiene el formulario */
 .contenedor-formulario {
     width: 100%;
     max-width: 355px;
@@ -279,10 +267,8 @@ main{
 
     border-radius: 6px;
 
-    /* Sombra parecida a la referencia */
+    
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
-
-    /* Hace que los elementos queden organizados */
     display: flex;
     flex-direction: column;
 
@@ -291,8 +277,6 @@ main{
     box-sizing: border-box;
 }
 
-
-/* Textos que indican qué debe escribir el usuario */
 .subtitulo-nombre,
 .subtitulo-corre,
 .subtitulo-mensaje {
@@ -307,8 +291,6 @@ main{
     margin: 0 0 6px 0;
 }
 
-
-/* Campos de nombre y correo */
 .contenedor-formulario input {
     width: 100%;
 
@@ -334,25 +316,14 @@ main{
 
     box-sizing: border-box;
 }
-
-
-/* Cambia el borde cuando hacemos clic en un campo */
 .contenedor-formulario input:focus {
     border-color: #2563eb;
 }
 
-
-/* Placeholder de los campos */
 .contenedor-formulario input::placeholder {
     color: #9ca3af;
 }
 
-
-/* 
-   Como tu HTML usa un input para el mensaje,
-   lo hacemos más alto para que visualmente
-   se parezca al cuadro de mensaje de la referencia.
-*/
 .contenedor-formulario input[placeholder="Escribe tu mensaje aquí"] {
     height: 70px;
 
@@ -362,7 +333,6 @@ main{
 }
 
 
-/* Botón Enviar Mensaje */
 .btn-enviarmsg {
     width: 100%;
 
@@ -388,17 +358,13 @@ main{
 }
 
 
-/* Efecto al pasar el mouse sobre el botón */
+
 .btn-enviarmsg:hover {
     background-color: #2563eb;
 }
 
 
-/* =====================================================
-   RESPONSIVE
-   ===================================================== */
 
-/* Tablets */
 @media (max-width: 768px) {
 
     .contactanos {
@@ -414,8 +380,6 @@ main{
     }
 }
 
-
-/* Celulares */
 @media (max-width: 480px) {
 
     .contactanos {
@@ -432,4 +396,64 @@ main{
 
         padding: 20px 16px;
     }
+}
+.footer {
+    width: 100%;
+    background-color: #0f172a;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 0;
+
+    color: #cbd5e1;
+
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+
+    .footer {
+        padding: 20px 15px;
+
+        font-size: 10px;
+    }
+
+    .footer p {
+        line-height: 1.6;
+    }
+}
+.barra-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+}
+
+.logo-titulo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu-lista {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ss {
+    text-decoration: none;
+    color: #1e293b;
+}
+
+.ss:hover {
+    color: #2563eb;
 }
