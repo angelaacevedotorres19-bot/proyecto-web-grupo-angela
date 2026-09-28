@@ -209,3 +209,227 @@ main{
 .presentacion-boton:hover {
     background-color: #1d4ed8;
 }
+/* =====================================================
+   Añadidura de andrea
+   ===================================================== */
+
+/* Contenedor principal de la sección */
+.contactanos {
+    width: 100%;
+    min-height: 400px;
+    padding: 45px 20px;
+    background-color: #f8fafc;
+
+    /* Colocamos los elementos uno debajo del otro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Línea que separa la sección */
+    border-bottom: 1px solid rgba(188, 187, 187, 0.7);
+
+    /* Espacio entre el título y el formulario */
+    gap: 25px;
+
+    /* Evita que los estilos anteriores afecten esta sección */
+    box-sizing: border-box;
+}
+
+
+/* Título "Contáctanos" */
+.titulo-contactanos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: #0f172a;
+    text-align: center;
+
+    /* Quitamos márgenes que puedan venir del navegador */
+    margin: 0;
+
+    /* Hace que el título quede encima del formulario */
+    position: relative;
+}
+
+
+/* Línea azul debajo del título */
+.titulo-contactanos::after {
+    content: "";
+
+    display: block;
+
+    width: 38px;
+    height: 4px;
+
+    background-color: #2563eb;
+
+    border-radius: 10px;
+
+    margin: 10px auto 0;
+}
+
+
+/* Tarjeta blanca que contiene el formulario */
+.contenedor-formulario {
+    width: 100%;
+    max-width: 355px;
+
+    background-color: white;
+
+    padding: 22px 18px;
+
+    border-radius: 6px;
+
+    /* Sombra parecida a la referencia */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+
+    /* Hace que los elementos queden organizados */
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* Textos que indican qué debe escribir el usuario */
+.subtitulo-nombre,
+.subtitulo-corre,
+.subtitulo-mensaje {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #374151;
+
+    margin: 0 0 6px 0;
+}
+
+
+/* Campos de nombre y correo */
+.contenedor-formulario input {
+    width: 100%;
+
+    height: 36px;
+
+    padding: 8px 10px;
+
+    margin-bottom: 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 2px;
+
+    outline: none;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-size: 12px;
+
+    color: #374151;
+
+    background-color: white;
+
+    box-sizing: border-box;
+}
+
+
+/* Cambia el borde cuando hacemos clic en un campo */
+.contenedor-formulario input:focus {
+    border-color: #2563eb;
+}
+
+
+/* Placeholder de los campos */
+.contenedor-formulario input::placeholder {
+    color: #9ca3af;
+}
+
+
+/* 
+   Como tu HTML usa un input para el mensaje,
+   lo hacemos más alto para que visualmente
+   se parezca al cuadro de mensaje de la referencia.
+*/
+.contenedor-formulario input[placeholder="Escribe tu mensaje aquí"] {
+    height: 70px;
+
+    padding-top: 10px;
+
+    margin-bottom: 14px;
+}
+
+
+/* Botón Enviar Mensaje */
+.btn-enviarmsg {
+    width: 100%;
+
+    height: 35px;
+
+    border: none;
+
+    border-radius: 3px;
+
+    background-color: #0f172a;
+
+    color: white;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+
+/* Efecto al pasar el mouse sobre el botón */
+.btn-enviarmsg:hover {
+    background-color: #2563eb;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .contactanos {
+        padding: 40px 20px;
+    }
+
+    .titulo-contactanos {
+        font-size: 28px;
+    }
+
+    .contenedor-formulario {
+        max-width: 400px;
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 480px) {
+
+    .contactanos {
+        padding: 35px 15px;
+    }
+
+    .titulo-contactanos {
+        font-size: 26px;
+    }
+
+    .contenedor-formulario {
+        width: 100%;
+        max-width: 355px;
+
+        padding: 20px 16px;
+    }
+}
