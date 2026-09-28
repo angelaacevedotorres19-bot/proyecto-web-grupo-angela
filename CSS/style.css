@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+main{
+    display: flex;
+    flex-direction:column;
+}
+
 .barra-principal{
     width: 100%;
       display: flex;
