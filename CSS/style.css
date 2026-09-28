@@ -22,3 +22,39 @@
 .destacado {
     color: blue; /* o el azul específico que use tu paleta, ej: #1a73e8 */
 }
+.presentacion {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.presentacion-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.presentacion-titulo {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.presentacion-texto {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.presentacion-boton {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.presentacion-boton:hover {
+    background-color: #1d4ed8;
+}
